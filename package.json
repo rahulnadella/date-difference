@@ -1,0 +1,36 @@
+{
+  "name": "date-difference",
+  "version": "1.0.0",
+  "description": "Calculates the difference between two dates",
+  "license": "MIT",
+  "repository": "https://github.com/rahulnadella/date-difference",
+  "author": {
+    "name": "Rahul Nadella",
+    "email": "rahulnadella@yahoo.com",
+    "url": "rahulnadella.com"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "date difference",
+    "date-difference",
+    "difference between dates",
+    "difference between two dates"
+  ],
+  "dependencies": {
+    "get-stdin": "^3.0.2",
+    "meow": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
