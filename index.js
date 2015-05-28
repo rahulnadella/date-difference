@@ -34,7 +34,7 @@ function add(key, value, postfix)
 }
 
 /*
-The datePrettyFormat function converts milliseconds to a human readible date output that corresponds to a specific format. 
+The datePrettyFormat function converts milliseconds to a human readible date output that corresponds to a specific format.
 */
 function datePrettyFormat(ms, opts) {
 	if (typeof ms !== 'number')
@@ -73,6 +73,9 @@ function datePrettyFormat(ms, opts) {
 Most of the solutions don't take into account a case that fails when the two dates involved go across a daylight saving change. In this case, the date on which day light saving change happens will have a duration in milliseconds which != 1000*60*60*24, so the typical calculation will fail.
 
 This function returns the difference between two dates representated in a specific format
+
+An example output without options is: 34y 338d 4h 8m 7s
+An example output with options is: ~34y
 */
 module.exports = function(a, b, opts)
 {
