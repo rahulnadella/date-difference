@@ -12,45 +12,45 @@ a specific format => ``34y 338d 4h 8m 7s``
 
 ``=> npm install -save date-difference``
 
-<p><code>
-var dateDifference = require('date-difference');<br/>
-<br/>
-dateDifference(new Date('7/1/2015'), new Date('7/1/2016'));</br/>
+```
+var dateDifference = require('date-difference');
+
+dateDifference(new Date('7/1/2015'), new Date('7/1/2016'));
 => '1y'
-<br/>
-dateDifference(new Date("1980-07-01T03:00:00"), new Date("2015-05-27T07:08:07"));<br/>
-=> '34y 338d 4h 8m 7s'<br/>
-<br/>
+
+dateDifference(new Date("1980-07-01T03:00:00"), new Date("2015-05-27T07:08:07"));
+=> '34y 338d 4h 8m 7s'
+
 // compact option
-dateDifference(new Date("2015-04-25T12:00:00"), new Date("2015-04-25T16:01:23"), {compact: true});<br/>
-=> '~4h'<br/>
-<br/>
-</code></p>
+dateDifference(new Date("2015-04-25T12:00:00"), new Date("2015-04-25T16:01:23"), {compact: true});
+=> '~4h'
+
+```
 
 ##CLI
 
 ``=> npm install --global date-difference``
 
-<p><code>
-  => date-difference --help<br/>
-  <br/>
-  Calculates the difference between two dates<br/>
-  <br/>
-  Usage<br/>
-    date-difference <firstDate> <secondDate> [--compact]<br/>
-    echo <firstDate> <secondDate> | date-difference<br/>
-    <br/>
-  Example<br/>
-   date1 = new Date("2015-01-25T12:00:00");<br/>
-   date2 = new Date("2015-03-05T04:01:23");<br/>
-   <br/>
-   date-difference date1 date2<br/>
-   => 38d 16h 1m 23s<br/>
-   <br/>
-  Options<br/>
-    --compact    Only show the first unit<br/>
-    <br/>
-</code></p>
+```
+  => date-difference --help
+  
+  Calculates the difference between two dates
+  
+  Usage
+    date-difference <firstDate> <secondDate> [--compact]
+    echo <firstDate> <secondDate> | date-difference
+    
+  Example
+   date1 = new Date("2015-01-25T12:00:00");
+   date2 = new Date("2015-03-05T04:01:23");
+   
+   date-difference date1 date2
+   => 38d 16h 1m 23s
+   
+  Options
+    --compact    Only show the first unit
+    
+```
 
 ##License
 
