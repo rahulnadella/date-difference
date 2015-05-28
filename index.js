@@ -1,5 +1,9 @@
 'use strict'
-function dateOutput(ms)
+
+/*
+The formatDate function outputs the Years, Days, Hours, Minutes, Seconds, and Milliseconds
+*/
+function formatDate(ms)
 {
   if (typeof ms !== 'number')
   {
@@ -16,6 +20,9 @@ function dateOutput(ms)
   };
 }
 
+/*
+Simple function to add a key value pair if the value is greater than 0
+*/
 function add(key, value, postfix)
 {
 	if (value > 0)
@@ -26,6 +33,9 @@ function add(key, value, postfix)
 	return key;
 }
 
+/*
+The datePrettyFormat function converts milliseconds to a human readible date output that corresponds to a specific format. 
+*/
 function datePrettyFormat(ms, opts) {
 	if (typeof ms !== 'number')
   {
@@ -41,7 +51,7 @@ function datePrettyFormat(ms, opts) {
 
 	var secDecimalDigits = typeof opts.secDecimalDigits === 'number' ? opts.secDecimalDigits : 1;
 	var ret = [];
-	var parsed = dateOutput(ms);
+	var parsed = formatDate(ms);
 
   ret = add(ret, parsed.years, 'y');
 	ret = add(ret, parsed.days, 'd');
