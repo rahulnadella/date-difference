@@ -1,7 +1,9 @@
 'use strict'
 var assert = require('assert');
 var dateDifference = require('../');
-
+/*
+Tests the date-difference w/o options set
+*/
 describe('date-difference', function(){
   describe('#dateDifferenceWithoutOptions()', function(){
     it('returns the difference between the two dates', function()
