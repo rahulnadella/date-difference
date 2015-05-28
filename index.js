@@ -70,7 +70,7 @@ the two dates involved go across a daylight saving change. In this case,
 the date on which day light saving change happens will have a duration in
 milliseconds which != 1000*60*60*24, so the typical calculation will fail.
 
-This function returns the difference between two dates representated in
+This function returns the difference between two dates represented in
 a specific format
 
 An example output without options is: 34y 338d 4h 8m 7s

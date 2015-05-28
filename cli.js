@@ -12,9 +12,9 @@ var cli = meow({
     '  echo <firstDate> <secondDate> | date-difference',
     '',
     'Example',
-    ' date1 = new Date("2015-01-25T12:00:00");'
-    ' date2 = new Date("2015-03-05T04:01:23");'
-    '                                         '
+    ' date1 = new Date("2015-01-25T12:00:00");',
+    ' date2 = new Date("2015-03-05T04:01:23");',
+    '                                         ',
     ' date-difference date1 date2',
     ' => 38d 16h 1m 23s',
     '',
