@@ -12,7 +12,7 @@ a specific format => ``34y 338d 4h 8m 7s``
 
 ``=> npm install -save date-difference``
 
-``
+<p><code>
 var dateDifference = require('date-difference');
 
 dateDifference(new Date('7/1/2015'), new Date('7/1/2016'));
@@ -25,13 +25,13 @@ dateDifference(new Date("1980-07-01T03:00:00"), new Date("2015-05-27T07:08:07"))
 dateDifference(new Date("2015-04-25T12:00:00"), new Date("2015-04-25T16:01:23"), {compact: true});
 => '~4h'
 
-``
+</code></p>
 
 ##CLI
 
 ``=> npm install --global date-difference``
 
-``
+<p><code>
   => date-difference --help
 
   Calculates the difference between two dates
@@ -50,7 +50,7 @@ dateDifference(new Date("2015-04-25T12:00:00"), new Date("2015-04-25T16:01:23"),
   Options
     --compact    Only show the first unit
 
-``
+</code></p>
 
 ##License
 
