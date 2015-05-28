@@ -1,6 +1,4 @@
 'use strict'
-var prettyMS = require('pretty-ms');
-
 function dateOutput(ms)
 {
   if (typeof ms !== 'number')
