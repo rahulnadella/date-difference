@@ -30,6 +30,18 @@ function add(key, value, postfix) {
   return key;
 }
 
+function addTimer(key, value){
+  if(value < 1){
+    key.push("00");
+  }else if(value < 10){
+    key.push("0"+value);
+    
+  }else {
+    key.push(""+value);
+  }
+  return key;
+}
+
 /*
 The datePrettyFormat function converts milliseconds to a human readible
 date output that corresponds to a specific format.
@@ -57,6 +69,15 @@ function datePrettyFormat(ms, opts) {
   if (opts.compact) {
     ret = add(ret, parsed.seconds, 's');
     return '~' + ret[0];
+  }
+
+  if (opts.timer && !opts.compact){
+    var retTimer = []
+    retTimer = addTimer(retTimer, parsed.hours);
+    retTimer = addTimer(retTimer, parsed.minutes);
+    retTimer = addTimer(retTimer, parsed.seconds);
+    return retTimer.join(":");
+
   }
 
   ret = add(ret, (ms / 1000 % 60).toFixed(secDecimalDigits).replace(/\.0$/, ''), 's');
